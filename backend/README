@@ -1,0 +1,33 @@
+-- create database tv;
+-- use tv;
+
+-- create table tb_canal(
+-- id_canal int primary key auto_increment,
+-- nm_canal varchar(200),
+-- nr_canal int,
+-- bt_aberto boolean
+-- );
+
+-- create table tb_canal_programa (
+-- id_canal_programa int primary key auto_increment,
+-- id_canal int,
+-- nm_programa varchar(200),
+-- ds_genero varchar(200),
+-- hr_programa time,
+--     foreign key (id_canal) references tb_canal(id_canal)
+-- );
+
+-- create table tb_usuario (
+-- id_usuario int primary key auto_increment,
+-- nm_usuario varchar(200)
+-- );
+
+-- create table tb_programa_favorito (
+-- id_programa_favorito int primary key auto_increment,
+-- id_usuario int,
+-- id_canal_programa int,
+-- vl_avaliacao int,
+--     foreign key (id_usuario) references tb_usuario(id_usuario),
+--     foreign key (id_canal_programa) references tb_canal_programa(id_canal_programa)
+-- );
+
